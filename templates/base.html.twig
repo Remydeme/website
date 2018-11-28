@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    <!-- Navigation bar -->
+    <!--Header -->
+
+    <div id="header">
+        <nav id="navigationBar" class="navbar navbar-expand-xl justify-content-start">
+            <div class="d-flex justify-content-between">
+                <div class="p-4">
+                    <a class="brand" href="/"> Conduite Vauclinoise </a>
+                </div>
+                <div id="pages" class="p-4">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_autoecole_permisaccompagne') }}"> Conduite accompagnée </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_autoecole_permisb') }}"> Permis B </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ path('app_autoecole_contacts') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="{{ path('app_autoecole_login')}}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Body-->
+        {% block body %}
+
+        {% endblock %}
+
+    <!--footer-->
+    <div id="footer" >
+        <footer class="mainfooter" role="contentinfo">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Addresse</h4>
+                                <address>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            34 Rue Émile Zola<br>
+                                            97280<br>
+                                            Vauclin<br>
+                                        </li>
+                                        <li>
+                                            Phone: 06 96 30 70 39
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!--Column1-->
+                            <div class="footer-pad">
+                                <h4>Contacts</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <!--Footer Bottom-->
+                                <p class="text-xs-center">&copy; Copyright 2018 - Deme Rémy.  All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    {% block javascripts %}
+    {% endblock %}
+    </body>
+</html>

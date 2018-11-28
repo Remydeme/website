@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conduite Vauclinoise{% endblock %}
+
+ {% block stylesheets %}
+     <link rel="stylesheet" type="text/css" href={{ asset('css/navbar.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/home.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/footer.css') }}>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ {% endblock %}
+
+{% block body %}
+    <!--Body-->
+
+    <!-- caroussel code -->
+
+
+    <div class="d-flex justify-content-center">
+        <div id="carouselHome" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselHome" data-slide-to="1"></li>
+                <li data-target="#carouselHome" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-rounded" src={{ asset('img/auto.jpg') }} alt="auto-ecole" width="700" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-rounded" src={{ asset('img/gts.jpg') }} alt="gts" width="700" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-rounded" src={{ asset('img/permis.jpg') }} alt="permis" width="700" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Annonce for promottion offer -->
+
+    <div id="promotion" class="d-flex justify-content-center">
+        <div class="Code">
+            <ul>
+                <h1> Code de la route </h1>
+                <h2> 360 € </h2>
+                <p> Questions, cours et réponses <br> illimité pendant 3 mois paiement en 2 fois.</p>
+                <a href="contacts" class="btn btn-warning  btn-lg" role="button" aria-pressed="true">Nous contacter</a>
+                <ul>
+        </div>
+        <div class="Permis">
+            <ul>
+                <h1> Permis B </h1>
+                <h2>799 € </h2>
+                <p>Code de la route + 20 heures de conduite. <br>
+                    Paiement en 3 fois sans frais</p>
+                <a href="contacts" class="btn btn-info  btn-lg" role="button">Nous contacter</a>
+        </div>
+    </div>
+
+
+    <!--- How does it work part -->
+
+
+    <div id="howStart" class="container">
+        <div class="row">
+            <h2> Comment prendre des cours avec nous? </h2>
+        </div>
+        <div class="row">
+            <ul>
+                <li class="nav-link"> <h4> <img class="hand-img" src={{ asset('img/hand.png') }} height="20px" width="30px">
+                        Choisisser votre formule. </h4> </li>
+                <li class="nav-link"> <h4> <img class="calendar-img" src={{ asset('img/calendar.png') }} height="20px" width="30px">
+                        Contacter nous pour réserver un crénau horraire au 0696 30.70.39 </h4> </li>
+            </ul>
+        </div>
+    </div>
+
+    {% block javascripts %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock %}
+
+
+{% endblock %}
+
+
+
+
+

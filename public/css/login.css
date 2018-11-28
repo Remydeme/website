@@ -1,0 +1,15 @@
+
+#login-form{
+	background-color: blue;
+}
+
+#submit-button {
+	position: center;
+}
+
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+}

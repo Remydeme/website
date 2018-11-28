@@ -1,0 +1,56 @@
+
+#promotion {
+		margin-bottom: 80px;
+}
+
+
+.Code {
+	background-color: white;
+	text-align: center;
+	box-shadow: 1px 3px 7px #999;
+	border-radius: 7px;
+	margin-right: 20px;
+	height: 300px;
+	width: 400px;
+}
+
+.Code > ul > h1 {
+	color : orange;
+
+}
+
+.Code > ul > button {
+	font-size: 1.7em;
+}
+
+.Permis {
+	background-color: white;
+	text-align: center;
+	box-shadow: 2px 3px 7px #999;
+	border-radius: 7px;
+	margin-left: 20px;
+	height: 300px;
+	width: 400px;
+}
+
+.Permis > ul > h1 {
+	color : #00cccc;
+	
+}
+
+.Permis > ul > button {
+	font-size: 1.7em;
+}
+
+.why-permis > ul > h2 {
+	color : #00cccc;
+}
+
+#contact {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 260px;
+}
+
+
+

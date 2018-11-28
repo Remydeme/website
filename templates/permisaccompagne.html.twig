@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conduite Vauclinoise{% endblock %}
+
+ {% block stylesheets %}
+     <link rel="stylesheet" type="text/css" href={{ asset('css/navbar.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/home.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/footer.css') }}>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ {% endblock %}
+
+{% block body %}
+    <!--Body-->
+
+    <div id="promotion" class="d-flex justify-content-center">
+
+        <div class="Permis">
+            <ul>
+                <h1> Permis accompagnée  </h1>
+                <h2>799 € </h2>
+                <p>Inscrivez-vous dès 15 ans en formation classique et passez votre permis accompagnée.</p>
+                <a href="contacts" class="btn btn-info btn-lg" role="button">Contacter nous</a>
+            </ul>
+        </div>
+    </div>
+
+    <div id="promotion" class="d-flex justify-content-center">
+
+        <div class="why-permis">
+            <ul>
+                <h2> Pourquoi choisir la conduite accompagnée ?  </h2>
+                <p>Accessible dès 15 ans, l’apprentissage anticipé de la conduite, plus connu sous le nom de conduite accompagnée, vous offre de nombreux avantages :
+
+                    Acquisition d’une plus grande expérience de la conduite à moindre coût pour compléter votre formation initiale
+                    Réduction de la prime d’assurance chez de nombreux assureurs
+                    Réduction de la période probatoire du permis de conduire de 3 à 2 ans
+                    26 heures de conduite nécessaires en moyenne contre 35 heures en apprentissage classique
+                    75% de réussite en moyenne contre 57% en apprentissage classique
+                    Passage de l’examen du permis dès 17 ans et demi pour conduire en autonomie dès 18 ans
+                    Diminution du risque routier constaté pour les enfants des familles ayant choisi cette formule (statistiques MACIF)
+                </p>
+                <a href="contacts" class="btn btn-danger btn-lg " role="button">Contacter nous</a>
+            </ul>
+        </div>
+    </div>
+
+
+
+    {% block javascripts %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock %}
+
+
+{% endblock %}
+
+
+

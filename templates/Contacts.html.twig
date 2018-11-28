@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conduite Vauclinoise{% endblock %}
+
+ {% block stylesheets %}
+     <link rel="stylesheet" type="text/css" href={{ asset('css/navbar.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/home.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/footer.css') }}>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ {% endblock %}
+
+{% block body %}
+    <!--Body-->
+
+    <div id="body" class="container" >
+        <div class="row">
+
+            <form action="/sign-up" method="post">
+                <div class="form-group">
+                    <label for="email">Nom</label>
+                    <input name="lastname" type="text" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input name="firstname" type="text" class="form-control" id="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="address">Addresse</label>
+                    <input name="address" type="text" class="form-control" id="address">
+                </div>
+                <div class="form-group">
+                      <label for="Forfait">Forfait</label>
+                      <select class="form-control form-control-lg">
+                          <option>Permis B</option>
+                         <option>Permis Accompagne</option>
+                          <option>Forfait Code</option>
+                     </select>
+                    </div>
+                <div class="form-group">
+                    <label for="postalCode">Code Postale</label>
+                    <input name="postalCode" type="text" class="form-control" id="email">
+                    <div class="form-group">
+                        <label for="email">Addresse Email</label>
+                        <input name="email" type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Confirmation</label>
+                        <input name="confirmation" type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Mot de passe</label>
+                        <input name="password" type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Confirmation</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <button  type="submit" class="btn btn-primary">Me connecter</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    {% block javascripts %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock %}
+
+
+{% endblock %}
+
+
+

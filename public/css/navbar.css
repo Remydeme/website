@@ -1,0 +1,92 @@
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-thin;
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(Roboto/Roboto-Light.ttf);
+}
+
+.brand:hover{
+
+    text-decoration: none;
+
+}
+
+ .navbar-brand:hover {
+ color: white;
+  font-family: "Roboto";
+ font-size : large;
+}
+
+
+* {
+	    font-family: Roboto-Light;
+}
+
+
+
+#navigationBar {
+ background-color: rgba(1, 1, 1, 0.9);
+ color: white;
+ border: none;
+}
+
+
+.brand:hover {
+    color: white;
+    font-style: none;
+}
+
+.brand {
+ color: lightgray;
+ font-size : 2.3em;
+ margin-right: 40px;
+}
+
+
+.brand:enable {
+ color: white;
+ font-size : large;
+}
+
+.brand:actived {
+ color: white;
+ font-size : large;
+}
+
+
+#pages > ul > li > a{
+   font-size : large;
+   color : white;
+}
+
+#pages > ul > li > a:hover{
+   font-size : large;
+   color : rgba(0, 0, 200, 0.3);;
+}
+
+
+
+#pages > ul > li > a {
+  border-color:  white;
+  border-width: 5px;
+  margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+
