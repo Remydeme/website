@@ -14,14 +14,15 @@ footer a:hover{
 }
 
 .footer-bottom{
-  background: gray;
+  background: .white;
+  color: black;
   padding: 2em;
 }
 .footer-top{
-  background: rgba(1, 1, 1, 0.8);
+  background: white ;
 }
 .footer-middle{
-   background: gray;
+   background: black;
   padding-top: 2em;
   color: white;
 }
@@ -47,7 +48,7 @@ footer a:hover{
 }
 .col-subnav .active{
   border-top:5px solid orange;
- background: white;
+  background: white;
   color: black;
 }
 

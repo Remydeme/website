@@ -11,24 +11,46 @@
 
 {% block body %}
     <!--Body-->
-    <div id="promotion" class="d-flex justify-content-center">
-        <div class="Code">
-            <ul>
-                <h1> Code annimé illimité </h1>
-                <h2>360 € </h2>
-                <p> Venez vous entrainer lors de nos séances de code animées au bourd du Vauclin. </p>
-                <a href="contacts" class="btn btn-warning btn-lg " role="button" >Obtenir le code</a>
-            </ul>
-        </div>
-        <div class="Permis">
-            <ul>
-                <h1> Permis B </h1>
-                <h2>799 € </h2>
-                <p>Inscrivez-vous dès 17 ans ½ en formation classique et passez votre permis de conduire pour plus d’indépendance !</p>
-                <a href="contacts" class="btn btn-info btn-lg" role="button" >Obtenir le permis</a>
-            </ul>
+    <div id="model-car" class="container-fluid" style="margin: 40px">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 95%">
+                    <img class="card-img-top" src={{ asset('img/panamera.jpg') }} alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Panamera</h5>
+                        <p class="card-text">799 €
+
+                            Inscrivez-vous dès 17 ans ½ en formation classique et passez votre permis de conduire pour plus d’indépendance.</p>
+                        <a href="#" class="btn btn-primary">Je me fais plaisir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm" style="width: 95%">
+                <div class="card" style="width: 95%;">
+                    <img class="card-img-top" src={{ asset('img/911.jpg') }} alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">911</h5>
+                        <p class="card-text">1300 €
+
+                            Inscrivez-vous dès 18 ans ½ en formation classique et passez votre permis de conduire pour plus d’indépendance.</p>
+                        <a href="#" class="btn btn-primary">Je paie 1300 letgo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm" style="width: 95%">
+                <div class="card" style="width: 95%;">
+                    <img class="card-img-top" src={{ asset('img/targa-2.jpg') }} alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Targa 4S</h5>
+                        <p class="card-text"> 2500€ Inscrivez-vous dès 18 ans ½ en formation classique et passez votre permis de conduire pour plus d’indépendance.</p>
+                        <a href="#" class="btn btn-primary">Je veux le monde ou rien chico letgo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 
     {% block javascripts %}

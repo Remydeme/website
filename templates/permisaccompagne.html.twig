@@ -6,23 +6,29 @@
      <link rel="stylesheet" type="text/css" href={{ asset('css/navbar.css') }}>
      <link rel="stylesheet" type="text/css" href={{ asset('css/home.css') }}>
      <link rel="stylesheet" type="text/css" href={{ asset('css/footer.css') }}>
+     <link rel="stylesheet" type="text/css" href={{ asset('css/permis-accompagne.css') }}>
      <meta name="viewport" content="width=device-width, initial-scale=1">
  {% endblock %}
 
 {% block body %}
     <!--Body-->
 
-    <div id="promotion" class="d-flex justify-content-center">
+<div id="model-car" class="container centered" style="margin: 40px">
+    <div class="row centered">
+        <div class="col-md centered">
+            <div class="card" >
+                <img class="card-img-top" height="500" width="300" src={{ asset('img/porsches.jpg') }} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Panamera</h5>
+                    <p class="card-text">799 €
 
-        <div class="Permis">
-            <ul>
-                <h1> Permis accompagnée  </h1>
-                <h2>799 € </h2>
-                <p>Inscrivez-vous dès 15 ans en formation classique et passez votre permis accompagnée.</p>
-                <a href="contacts" class="btn btn-info btn-lg" role="button">Contacter nous</a>
-            </ul>
+                        Inscrivez-vous dès 17 ans ½ en formation classique et passez votre permis de conduire pour plus d’indépendance.</p>
+                    <a href="#" class="btn btn-primary">Je me fais plaisir</a>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 
     <div id="promotion" class="d-flex justify-content-center">
 

@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\UserinfoRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\StudentRepository")
  */
-class Userinfo
+class Student
 {
     /**
      * @ORM\Id()
@@ -29,17 +29,22 @@ class Userinfo
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $adress;
+    private $email;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $postalCode;
+    private $password;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Users", mappedBy="userInfo", cascade={"persist", "remove"})
+     * @ORM\Column(type="string", length=255)
      */
-    private $userref;
+    private $forfait;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $adress;
 
     public function getId(): ?int
     {
@@ -70,6 +75,42 @@ class Userinfo
         return $this;
     }
 
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getForfait(): ?string
+    {
+        return $this->forfait;
+    }
+
+    public function setForfait(string $forfait): self
+    {
+        $this->forfait = $forfait;
+
+        return $this;
+    }
+
     public function getAdress(): ?string
     {
         return $this->adress;
@@ -78,35 +119,6 @@ class Userinfo
     public function setAdress(string $adress): self
     {
         $this->adress = $adress;
-
-        return $this;
-    }
-
-    public function getPostalCode(): ?string
-    {
-        return $this->postalCode;
-    }
-
-    public function setPostalCode(string $postalCode): self
-    {
-        $this->postalCode = $postalCode;
-
-        return $this;
-    }
-
-    public function getUserref(): ?Users
-    {
-        return $this->userref;
-    }
-
-    public function setUserref(Users $userref): self
-    {
-        $this->userref = $userref;
-
-        // set the owning side of the relation if necessary
-        if ($this !== $userref->getUserInfo()) {
-            $userref->setUserInfo($this);
-        }
 
         return $this;
     }
